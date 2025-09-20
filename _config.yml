@@ -1,0 +1,65 @@
+
+# Site settings
+title: "Quân & Phương"
+description: "Join us for our special day - a celebration of love, luxury, and eternal commitment"
+url: "https://yourdomain.com"
+baseurl: ""
+
+# Wedding details
+bride_name: "Hồng Quân"
+groom_name: "Anh Phương"
+wedding_date: "November 1, 2025"
+wedding_venue: "CTM Palace"
+
+include: ["_pages"]
+permalink: /:title/
+
+# Collections
+collections:
+  gallery:
+    output: true
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# SEO
+author: "Quân & Phương Wedding"
+twitter:
+  username: lovewedding
+  card: summary_large_image
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - package.json
+  - Rakefile
+  - README
+  - tmp

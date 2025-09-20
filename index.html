@@ -1,0 +1,299 @@
+---
+layout: home
+title: "Quân & Phương - Wedding Website"
+description: "Join Hồng Quân & Anh Phương for their special day - a celebration of love, luxury, and eternal commitment"
+---
+
+<!-- Hero Section -->
+<section class="section-hero">
+  <div class="hero-content fade-in">
+    <h1 class="hero-names text-script">{{ site.bride_name }} & {{ site.groom_name }}</h1>
+    <div class="hero-date">{{ site.wedding_date }}</div>
+    <div class="hero-venue">{{ site.wedding_venue }}</div>
+    <a href="#rsvp" class="btn btn-primary">RSVP Now</a>
+    <a href="#story" class="btn btn-outline">Về chúng tôi</a>
+  </div>
+</section>
+
+<!-- Wedding Countdown Section -->
+<section id="countdown" class="section section-dark">
+  <div class="container">
+    <div class="text-center">
+      <h2>Đếm ngược đến ngày cưới</h2>
+      <p class="text-script" style="font-size: 1.5rem; margin-bottom: 2rem;">Thời gian còn lại để chúng ta gặp nhau</p>
+      
+      <div id="wedding-countdown" class="countdown-display">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="days">0</span>
+          <span class="countdown-label">Ngày</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="hours">0</span>
+          <span class="countdown-label">Giờ</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="minutes">0</span>
+          <span class="countdown-label">Phút</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="seconds">0</span>
+          <span class="countdown-label">Giây</span>
+        </div>
+      </div>
+      
+      <div id="wedding-message" class="countdown-message" style="display: none;">
+        <h3 class="text-script" style="font-size: 3rem; color: var(--gold);">Chúng tôi đã kết hôn! 💕</h3>
+        <p>Cảm ơn bạn đã chia sẻ niềm vui cùng chúng tôi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section id="story" class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Cô Dâu & Chú Rể</h2>
+      <p class="text-script" style="font-size: 1.5rem; color: var(--gold);">Where it all began...</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-2">
+        <div class="card">
+          <div class="card-image" style="background-image: url('{{ "/assets/images/LEO08894.webp" | relative_url }}'); background-position: center 20%; background-size: 150%;"></div>
+          <h3>Đỗ Bảo Anh Phương</h3>
+          <p>Hello Hồng Quân :D</p>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-image" style="background-image: url('{{ "/assets/images/LEO09162.webp" | relative_url }}'); background-position: center 5%; background-size: 100%;"></div>
+          <h3>Nguyễn Hồng Quân</h3>
+          <p>Hi Anh Phương ^.^</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wedding Details Section -->
+<section id="details" class="section section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Wedding Details</h2>
+      <p class="text-script" style="font-size: 1.5rem;">All the important information for our special day</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-3">
+        <div class="text-center">
+          <i class="fas fa-calendar-alt" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
+          <h4>Thời gian</h4>
+          <p>{{ site.wedding_date }}</p>
+          <p>Lễ cưới: 11:00 AM<br>Dự tiệc: 11:30 AM</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="text-center">
+          <div class="card-image" style="background-image: url('{{ "/assets/images/chibi.webp" | relative_url }}'); background-position: center 10%; background-size: 100%;"></div>
+          <a href="https://www.google.com/maps/place/CTM+Palace/@21.0424329,105.7873083,17z/data=!3m1!4b1!4m6!3m5!1s0x3135ab313282ca37:0x93c5760e067d47f4!8m2!3d21.0424279!4d105.7898832!16s%2Fg%2F11cs5n5yjs?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary mt-2" target="_blank" rel="noopener noreferrer">Tìm đường</a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="text-center">
+          <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
+          <h4>Địa điểm</h4>
+          <p>{{ site.wedding_venue }}</p>
+          <p>131 Đường Nguyễn Phong Sắc<br>Dịch Vọng Hậu, Cầu Giấy, Hà Nội</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline Section -->
+<section id="timeline" class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Wedding Day Timeline</h2>
+      <p class="text-script" style="font-size: 1.5rem; color: var(--gold);">Schedule of our special day</p>
+    </div>
+    
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h4>10:30 AM - Đón Khách</h4>
+          <p>Đón khách tại sảnh chính tầng 1, ổn định chỗ ngồi và chụp ảnh.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item fade-in">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h4>11:00 AM - Lễ Cưới</h4>
+          <p>Lễ cưới bắt đầu tại phòng cưới tầng 1.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item fade-in">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h4>11:30 AM - Mời khách dùng tiệc</h4>
+          <p>Mời khách thưởng thức tiệc cưới do nhà hàng chuẩn bị.</p>
+        </div>
+      </div>
+      
+      <div class="timeline-item fade-in">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h4>1:00 PM - Chào khách</h4>
+          <p>Gửi lời cảm ơn và tiễn khách ra về.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Preview Section -->
+<section id="gallery" class="section section-alt">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Photo Gallery</h2>
+      <p class="text-script" style="font-size: 1.5rem; color: var(--gold);">Moments captured in time</p>
+    </div>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/GLOW8342.webp" | relative_url }}')"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09513.webp" | relative_url }}')" data-bg-position="center 15%"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09446.webp" | relative_url }}')"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09198.webp" | relative_url }}')"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09477.webp" | relative_url }}')" data-bg-position="center 15%"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09020.webp" | relative_url }}')" data-bg-position="center 5%"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09339anhban4.webp" | relative_url }}')"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO00541.webp" | relative_url }}')"></div>
+      <div class="gallery-item fade-in lazy-bg" data-bg="url('{{ "/assets/images/LEO09550anhban5.webp" | relative_url }}')"></div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <!-- <a href="#" class="btn btn-secondary">View Full Gallery</a> -->
+    </div>
+  </div>
+</section>
+
+<!-- RSVP Section -->
+<section id="rsvp" class="section section-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>RSVP</h2>
+      <p class="text-script" style="font-size: 1.5rem;">Please let us know if you can join us</p>
+      <p>Kindly respond by October 15, 2025</p>
+    </div>
+    
+    <div class="rsvp-form fade-in">
+      <form action="https://formspree.io/f/xnnbeood" method="POST">
+        <!-- Formspree configuration -->
+        <input type="hidden" name="_next" value="{{site.url}}{{site.baseurl}}/#rsvp">
+        <input type="hidden" name="_subject" value="RSVP Wedding - Quân & Phương">
+        
+        <div class="form-group">
+          <label for="name" class="form-label">Họ và Tên *</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Số điện thoại</label>
+          <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Địa chỉ email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="attendance" class="form-label">Bạn sẽ tới tham dự bữa tiệc của chúng tôi chứ? *</label>
+          <select id="attendance" name="attendance" class="form-control" required>
+            <option value="">Vui lòng chọn...</option>
+            <option value="yes">Chắc chắn rồi</option>
+            <option value="no">Xin lỗi, tôi không thể tham dự</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="guests" class="form-label">Số lượng người</label>
+          <select id="guests" name="guests" class="form-control">
+            <option value="1">1 Người</option>
+            <option value="2">2 Người</option>
+            <option value="3">3 Người</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guests" class="form-label">Bạn là khách của</label>
+          <select id="guests" name="guests" class="form-control">
+            <option value="">Vui lòng chọn...</option>
+            <option value="nha_trai">Nhà Trai</option>
+            <option value="nha_gai">Nhà Gái</option>
+          </select>
+        </div>
+        
+        <!-- <div class="form-group">
+          <label for="dietary" class="form-label">Dietary Restrictions</label>
+          <textarea id="dietary" name="dietary" rows="3" class="form-control" placeholder="Please let us know about any dietary restrictions or allergies..."></textarea>
+        </div> -->
+        
+        <div class="form-group">
+          <label for="message" class="form-label">Lời chúc phúc & Nhắn gửi</label>
+          <textarea id="message" name="message" rows="4" class="form-control" placeholder="Share your excitement, well wishes, or any special requests..."></textarea>
+        </div>
+        
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" target="_blank">Gửi</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Registry Section -->
+<section id="registry" class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Wedding Registry</h2>
+      <p class="text-script" style="font-size: 1.5rem; color: var(--gold);">Your presence is the only present we need</p>
+      <p>But if you wish to honor us with a gift, we've registered at a few of our favorite places.</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="card-image" style="background: linear-gradient(135deg, #800020 0%, #a01030 100%); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-home" style="font-size: 3rem; color: white;"></i>
+          </div>
+          <h4>Home & Garden</h4>
+          <p>Beautiful items to make our house a home</p>
+          <a href="#" class="btn btn-secondary">Visit Registry</a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="card-image" style="background: linear-gradient(135deg, #D4AF37 0%, #e6c757 100%); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-utensils" style="font-size: 3rem; color: white;"></i>
+          </div>
+          <h4>Kitchen & Dining</h4>
+          <p>Everything we need to create delicious memories</p>
+          <a href="#" class="btn btn-secondary">Visit Registry</a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="card-image" style="background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-plane" style="font-size: 3rem; color: white;"></i>
+          </div>
+          <h4>Honeymoon Fund</h4>
+          <p>Help us create unforgettable memories on our honeymoon</p>
+          <a href="#" class="btn btn-secondary">Contribute</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
