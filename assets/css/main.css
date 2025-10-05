@@ -853,6 +853,14 @@ p {
   }
 }
 
+/* For even smaller screens */
+@media (max-width: 480px) {
+  #details h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
 /* Print Styles */
 @media print {
   .site-header,
