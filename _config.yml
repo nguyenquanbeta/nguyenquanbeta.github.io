@@ -8,8 +8,8 @@ baseurl: ""
 # Wedding details
 bride_name: "Hồng Quân"
 groom_name: "Anh Phương"
-wedding_date: "November 1, 2025"
-wedding_venue: "CTM Palace"
+wedding_date: "Thứ Bảy, Ngày 1 Tháng 11 Năm 2025"
+wedding_venue: "Sảnh tầng 1, Trung tâm tiệc cưới và sự kiện CTM Palace"
 
 include: ["_pages"]
 permalink: /:title/
