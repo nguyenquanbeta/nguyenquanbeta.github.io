@@ -10,6 +10,7 @@ bride_name: "Hồng Quân"
 groom_name: "Anh Phương"
 wedding_date: "Thứ Bảy, Ngày 1 Tháng 11 Năm 2025"
 wedding_venue: "Sảnh tầng 1, Trung tâm Tiệc cưới và Sự kiện CTM Palace"
+wedding_address: "131 Đường Nguyễn Phong Sắc, Cầu Giấy, Hà Nội"
 
 include: ["_pages"]
 permalink: /:title/
